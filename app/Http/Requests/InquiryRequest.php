@@ -56,6 +56,15 @@ class InquiryRequest extends FormRequest
                 'string',
                 'in:Yes,No'
             ],
+            'xxTrustedFormCertUrl' => [
+                'required'
+            ],
+            'xxTrustedFormToken' => [
+                'required'
+            ],
+            'xxTrustedFormPingUrl' => [
+                'required'
+            ],
             'g-recaptcha-response' => [
                 'required',
                 function (string $attribute, mixed $value, Closure $fail) {
